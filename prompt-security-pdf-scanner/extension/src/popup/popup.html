@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>PDF Secret Scanner</h1>
+
+    <label class="row">
+      <span>Inspection service URL</span>
+      <input id="backendUrl" type="text" placeholder="http://127.0.0.1:8000" />
+    </label>
+
+    <label class="row row--inline">
+      <input id="enabled" type="checkbox" />
+      <span>Scanning enabled</span>
+    </label>
+
+    <button id="save">Save</button>
+    <span id="status" class="status"></span>
+
+    <h2>Recent inspections</h2>
+    <ul id="recent" class="recent"></ul>
+    <button id="clear" class="link">Clear history</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
